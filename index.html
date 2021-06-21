@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            top: 11.5%;
+            position: absolute;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            font-family: 'Signika Negative';
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            font-size: 40px;
+            padding: 22px 38px;
+            position: absolute;
+            top: 65%;
+            margin-left: 40%;
+            text-align: center;
+        }
+
+        #text99 {
+            margin-left: 50%;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            margin-top: 0%;
+            position: relative;
+            height: 10px;
+            width: 10px;
+            background-color: #bbb;
+            border-radius: 10%;
+            z-index: 1;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #000000;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RahulCom</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=about.css">
+
+<body>
+    <!-- header -->
+    <header>
+        <img src="./Images/logo.png" height="60%" width="5%" class="logo" alt="">
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Clientele</button>
+                    <div class="dropdown-content">
+                        <a href="#">Small</a>
+                        <a href="#">Medium</a>
+                        <a href="#">Large</a>
+                    </div>
+                </div>
+                <li><a href="E-Waste">E-waste Collection Centers</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Softwares</button>
+                    <div class="dropdown-content">
+                        <a href="#">Animation</a>
+                        <a href="#">Broadcast and TV</a>
+                        <a href="#">Captures and Encoders</a>
+                        <a href="#">Test and Measurements</a>
+                        <a href="#">Motion Capture</a>
+                        <a href="#">Virtual Reality</a>
+                        <a href="#">Captures</a>
+                        <a href="#">Softwares</a>
+                        <a href="#">Storage and Mam Solution</a>
+                        <a href="#">Audio</a>
+                        <a href="#">Digital Signalling and Conferencing</a>
+                    </div>
+        </nav>
+        <a href="Contact Us"><button id="contact">Contact Us</button></a>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <!-- slider -->
+    <!-- <div class="slideshow-container"> -->
+
+        <div class="mySlides fade">
+            <img src="./Images/slider11.jpg" style="width:100%">
+            <div class="text">Rahul Com</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/slider222.jpg" style="width:100%">
+            <div class="text">Rahul</div>
+        </div>
+
+        <div class="mySlides fade">
+            <video id="myvideo" height="600px" width="1920px" controls autoplay>
+                <source src="./vidbg1.mp4" type="video/mp4">
+                <source src="./vidbg1.mp4" type="video/ogg">
+            </video>
+            <!-- <img src="./Images/slider333.jpg" height="600px" width="100%" style="width:100%"> -->
+            <div class="text" id="text99">Com</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+
+        }
+    </script>
+
+    <!-- brands -->
+    <h2 id="h2">WE ASSOCIATE WITH BRANDS</h2>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="./Images/niagra.png" height="80%" width="14%" alt="">
+            <img src="./Images/aspera.png" height="60%" width="15%" alt="">
+            <img src="./Images/barnfind.png" height="35%" width="12%" alt="">
+            <img src="./Images/osprey.png" height="35%" width="12%" alt="">
+            <img src="./Images/ihsa.jfif" height="30%" width="15%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/atto.png" height="60%" width="14%" alt="">
+            <img src="./Images/vaddio.jfif" height="80%" width="14%" alt="">
+            <img src="./Images/tele1.jfif" height="80%" width="13%" alt="">
+            <img src="./Images/diskarchive.png" height="60%" width="12%" alt="">
+            <img src="./Images/quales.jfif" height="20%" width="14%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/cambridge.png" height="80%" width="15%" alt="">
+            <img src="./Images/unitex.png" height="80%" width="12%" alt="">
+            <img src="./Images/vicon.png" height="80%" width="15%" alt="">
+            <img src="./Images/woody.png" height="80%" width="11%" alt="">
+            <img src="./Images/cin1.png" height="80%" width="16%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/pomfrot.png" height="80%" width="15%" alt="">
+            <img src="./Images/5dt.jfif" height="80%" width="11%" alt="">
+            <img src="./Images/capella.png" height="80%" width="15%" alt="">
+            <img src="./Images/flow works.png" height="80%" width="13%" alt="">
+            <img src="./Images/ungine.png" height="80%" width="15%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/axle.png" height="80%" width="13%" alt="">
+            <img src="./Images/boxx2.png" height="80%" width="14%" alt="">
+            <img src="./Images/haption.png" height="80%" width="13%" alt="">
+            <img src="./Images/Intinor_logo.png" height="80%" width="14%" alt="">
+            <img src="./Images/cyberglove.jfif" height="80%" width="15%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/bbright.jfif" height="80%" width="13%" alt="">
+            <img src="./Images/apple.png" height="80%" width="13%" alt="">
+            <img src="./Images/xdream.png" height="80%" width="14%" alt="">
+            <img src="./Images/spectralogic.png" height="80%" width="14%" alt="">
+            <img src="./Images/sk1.png" height="80%" width="16%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/digitalnirvana.png" height="80%" width="16%" alt="">
+            <img src="./Images/witbe.jfif" height="80%" width="14%" alt="">
+            <img src="./Images/ioindustries.png" height="80%" width="11%" alt="">
+            <img src="./Images/theo player.png" height="80%" width="132" alt="">
+            <img src="./Images/rohdeandschwartz.png" height="80%" width="21%" alt="">
+        </div>
+        <div class="column">
+            <img src="./Images/zixi.png" height="80%" width="14%" alt="">
+            <img src="./Images/voice interaction.png" height="80%" width="13%" alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- contact us -->
+    <div class="container2">
+        <div class="orange">
+            <h1>Welcome Back!</h1>
+            <br>
+            <p>You can contact us via email</p>
+            <button class="button3">READ MORE</button>
+            <br>
+
+            <div class="white">
+
+                <h1><strong>Contact Us</strong></h1> <br> <br>
+                <div class="r1"></div>
+                <div class="r2"></div>
+                <div class="form">
+                    <label for=""></label>
+                    <input type="text" class="r1" placeholder="Email ID" required>
+                </div>
+                <div class="form">
+                    <label for=""></label>
+                    <input type="text" class="r2" placeholder="Password" required>
+
+                </div>
+                <button class="button2">SUBMIT </button>
+
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="ftr">
+                <img src="./Images/logo.png" height="150px" width="150px" alt="logo">
+            </div>
+
+            <div class="ftr">
+                <h3 id="quick">Quick Links</h3>
+                <br>
+                <ul class="content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Clientele">Clientele</a></li>
+                    <li><a href="E-Waste">E-waste Collection</a></li>
+                </ul>
+            </div>
+
+            <div class="ftr">
+                <h3>Pune Office</h3>
+                <br>
+                <p>M/s Rahul Commerce
+                    Flat 8 & 9, 3rd Floor, New Nirmal Apartment,
+                    189, Dhole Patil Road,
+                    Next to Akshay Complex,
+                    Pune - 411001 Maharashtra, India</p>
+                <br>
+                <h4>Mobile#: +91 9823072655</h4>
+                <br>
+                <h4>E-mail: sales@rahulcom.com</h4>
+            </div>
+
+            <div class="ftr">
+                <h3>Mumbai Office</h3>
+                <br>
+                <p>M/s Rahul Commerce
+                    A-1, Anand Milan Apartment,
+                    Milan Subway Road, Santacruz (W),
+                    Mumbai - 400054
+                    Maharashtra, India</p>
+                <br>
+                <h4>Mobile#: +91 9867031624</h4>
+                <br>
+                <h4>E-mail: sales@rahulcom.com</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

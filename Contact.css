@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(90deg, white 75%, gold 25%);
+}
+
+.bg1{
+    margin-left: 20%;
+    margin-top:25% ;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+
+.bg1 h3{
+    text-align: left;
+    margin-left: 32%;
+    font-size: 40px;
+}
+
+.bg1 p{
+    text-align: left;
+    margin-left: 32%;
+    font-size: 18px;
+}
+
+input[type=text] {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: grey;
+    text-align: left;
+    width: 35%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    }
+
+    input[type=text2] {
+        height: 50px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        color: grey;
+        text-align: left;
+        width: 35%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 2px solid grey;
+}
+
+.btn1 {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: -26%;
+    cursor: pointer;
+    }
+
+figure{
+    height: auto;
+    width: 50%;
+    height: 40%;
+    margin-top: -40%;
+    margin-left: 95%;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    
+}
+
+figure img{
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-bottom: 3%;
+}
+
+
