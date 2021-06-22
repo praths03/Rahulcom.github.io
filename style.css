@@ -258,15 +258,30 @@ footer .ftr {
 }
 
 @media only screen and (max-width: 900px) {
+    footer {
+        margin-top: 250px;
+    }
     footer img {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
     footer #quick {
-        margin-left: -100%;
+        margin-left: -80%;
     }
     footer a {
-        margin-left: -130%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        margin-left: -110%;
+    }
+    footer p {
+        font-size: 17px;
+        margin-top: 20%;
+        padding-top: -10%;
+    }
+    footer h4 {
+        margin-top: 35%;
+        font-size: 14px;
+        padding-right: 13%;
     }
 }
 
@@ -456,7 +471,7 @@ footer .ftr {
         margin-left: 30%;
         text-align: center;
     }
-    #myvideo{
+    #myvideo {
         height: 900px;
         width: 500px;
         left: -10%;
