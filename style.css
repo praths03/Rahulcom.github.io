@@ -257,7 +257,7 @@ footer .ftr {
     color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     footer {
         margin-top: 250px;
     }
