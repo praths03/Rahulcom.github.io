@@ -262,7 +262,7 @@ footer .ftr {
         width: 400px;
     }
     footer {
-        margin-top: 250px;
+        margin-top: 700px;
     }
     footer img {
         max-height: 100px;
@@ -270,7 +270,7 @@ footer .ftr {
     }
     footer #quick {
         margin-left: 0;
-        font-size: 22px;
+        font-size: 18px;
         position: absolute;
     }
     .content {
@@ -281,14 +281,14 @@ footer .ftr {
         white-space: nowrap;
     }
     #pune {
-        margin-top: 10%;
+        margin-top: 5%;
     }
     #mumbai {
         margin-top: 10%;
         padding: 2px;
     }
     footer p {
-        font-size: 20px;
+        font-size: 18px;
     }
     footer h4 {
         font-size: 17px;
@@ -324,27 +324,6 @@ footer .ftr {
     color: white;
 }
 
-@media only screen and (max-width: 699px) {
-    .orange {
-        position: absolute;
-        height: 300px;
-        width: 200px;
-    }
-    .orange h1 {
-        top: 2%;
-    }
-    button.button3 {
-        top: 20%;
-        right: 17%;
-        height: 30%;
-        font-size: 12px;
-    }
-    .orange p {
-        position: absolute;
-        top: 30%;
-    }
-}
-
 .orange p {
     text-align: center;
     margin-top: 10%;
@@ -353,6 +332,45 @@ footer .ftr {
 .orange h1 {
     text-align: center;
     margin-top: 12%;
+}
+
+@media only screen and (max-width: 480px) {
+    .orange {
+        height: 280px;
+        width: 300px;
+        margin-left: 10%;
+    }
+    .white {
+        position: absolute;
+        top: 250%;
+        left: -125%;
+    }
+    .white h1{
+        position: absolute;
+        top: -50%;
+        left: 25%;
+    }
+    .r1{
+        position: absolute;
+        top: -20%;
+        margin-left: -4%;
+    }
+    .r2{
+        top: -8%;
+        margin-left: -4%;
+        position: absolute;
+    }
+    .button2{
+        top: -5%;
+    } 
+    .button2{
+        position: absolute;
+        top: -22%;
+        left: -27%;
+    }
+    .button3{
+        border-spacing: 20px;
+    }
 }
 
 .white {
@@ -377,16 +395,6 @@ footer .ftr {
     margin-left: 50px;
     width: 500px;
     background: silver;
-}
-
-@media only screen and (max-width: 699px) {
-    .white {
-        margin-top: -80%;
-    }
-    .button2 {
-        left: -50%;
-        top: 5%;
-    }
 }
 
 .conatiner2 form {
